@@ -1,3 +1,4 @@
+/*
 h1, h2, h3, h4, h5 {
   color: #773EEC;
   display: inline;
@@ -43,6 +44,8 @@ h6 {
   margin-right: 20px;
 }
 
+
+
 body {
   display: flex;
 }
@@ -64,6 +67,26 @@ article {
   grid-template-columns: repeat(2, 500px);
   justify-content: space-between;
   gap: 10px;
+}
+
+*/
+
+button.cancel {
+  background: #F4F3F8;
+  border-radius: 2em;
+  color: #773EEC;
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background: #773EEC;
+  border-radius: 2em;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
