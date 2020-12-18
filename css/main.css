@@ -71,6 +71,11 @@ article {
 
 */
 
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 button.cancel {
   background: #F4F3F8;
   border-radius: 2em;
@@ -78,6 +83,12 @@ button.cancel {
   border: none;
   padding: 0.5em 1em;
   font-weight: bold;
+  margin-right: 1em;
+  transition: background-color 0.3s;
+}
+
+button.cancel:hover {
+  background-color: #ded6ff;
 }
 
 button[type="submit"] {
@@ -87,6 +98,11 @@ button[type="submit"] {
   border: none;
   padding: 0.5em 1em;
   font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #824bf3;
 }
 
 /*# sourceMappingURL=main.css.map */
