@@ -3,8 +3,15 @@ h1,h2,h3,h4,h5{
     display: inline;
 }
 h6{
-    font-style: italic;
     display: inline;
     font-weight: lighter !important;
+    font-size:.90rem;
+    font-style: italic;
+}
+aside h5,h4{
+    display: block;
+}
+aside h5{
+    color: black;
     font-size:.90rem;
 }

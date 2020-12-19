@@ -1,32 +1,32 @@
 .card{
     padding: 10px;
     border-radius: 20px !important;
+    border: 0 !important;
+    box-shadow:2px 2px 4px 3px #eaeaea; 
 }
-
 .card-header{
     display: flex;
     justify-content: space-between;
     color: $colorTexto;
     border:0 !important;
 }
-
 .card-footer{
-    border:0 !important;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
+    border:0 !important;
     input,button{
         border:0;
         border-radius:20px;
         padding: 10px 20px;
         font-weight: bold;
     }
-    input{
+    button[type='submit']{
         background-color: $colorMorado;
         color: white;
     }
-    button{
+    button[type='button']{
+        margin-right:20px;
         background-color: $colorNav;
         color:$colorMorado;
-        margin-right:20px;
     }
 }

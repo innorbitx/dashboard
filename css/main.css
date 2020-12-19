@@ -1,19 +1,29 @@
-/*
 h1, h2, h3, h4, h5 {
   color: #773EEC;
   display: inline;
 }
 
 h6 {
-  font-style: italic;
   display: inline;
   font-weight: lighter !important;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+aside h5, h4 {
+  display: block;
+}
+
+aside h5 {
+  color: black;
   font-size: 0.9rem;
 }
 
 .card {
   padding: 10px;
   border-radius: 20px !important;
+  border: 0 !important;
+  box-shadow: 2px 2px 4px 3px #eaeaea;
 }
 
 .card-header {
@@ -24,9 +34,9 @@ h6 {
 }
 
 .card-footer {
-  border: 0 !important;
   display: flex;
   justify-content: flex-end;
+  border: 0 !important;
 }
 .card-footer input, .card-footer button {
   border: 0;
@@ -34,75 +44,68 @@ h6 {
   padding: 10px 20px;
   font-weight: bold;
 }
-.card-footer input {
+.card-footer button[type=submit] {
   background-color: #773EEC;
   color: white;
 }
-.card-footer button {
+.card-footer button[type=button] {
+  margin-right: 20px;
   background-color: #F4F3F8;
   color: #773EEC;
-  margin-right: 20px;
 }
 
+ul {
+  border-radius: 0 20px 20px 0 !important;
+}
 
+nav li {
+  border: 0px solid transparent !important;
+}
+nav li:hover {
+  background-color: #773EEC !important;
+  border-radius: 0 20px 20px 0;
+}
+nav li:hover a {
+  color: white !important;
+}
 
-body {
-  display: flex;
+nav a {
+  text-decoration: none !important;
+  color: #773EEC !important;
+  font-weight: bold;
+}
+
+aside img {
+  width: 50px;
+  height: 45px;
+  min-width: 50px;
+  min-height: 45px;
 }
 
 aside {
-  width: 20%;
   background-color: #F4F3F8;
-  height: 100vh;
+  padding: 0 !important;
 }
 
-section {
-  padding: 30px;
-  height: 100vh;
-  width: 80%;
-}
-
-article {
-  display: grid;
-  grid-template-columns: repeat(2, 500px);
-  justify-content: space-between;
-  gap: 10px;
-}
-
-*/
-
-.card-footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-button.cancel {
-  background: #F4F3F8;
-  border-radius: 2em;
+.Cant-comentarios {
+  background-color: #F4F3F8;
   color: #773EEC;
-  border: none;
-  padding: 0.5em 1em;
+  padding: 5px 10px;
+  border-radius: 20px;
   font-weight: bold;
-  margin-right: 1em;
-  transition: background-color 0.3s;
+  align-self: flex-end;
 }
 
-button.cancel:hover {
-  background-color: #ded6ff;
+.nav-central {
+  justify-content: space-between;
 }
 
-button[type="submit"] {
-  background: #773EEC;
-  border-radius: 2em;
-  color: #fff;
-  border: none;
-  padding: 0.5em 1em;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-button[type="submit"]:hover {
-  background-color: #824bf3;
+input[type=search] {
+  border: 0 !important;
+  box-shadow: 2px 2px 4px 3px #eaeaea;
+  border-radius: 20px;
+  max-width: 500px;
+  min-width: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

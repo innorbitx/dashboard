@@ -1,23 +1,31 @@
 @import './variables';
 @import './texto';
 @import './card';
+@import './nav';
 
-body{
-    display: flex;
-}
+
 aside{
-    width:20%;
     background-color:$colorNav;
-    height: 100vh;
+    padding: 0 !important;
 }
-section{
-    padding: 30px;
-    height: 100vh;
-    width: 80%;
+
+.Cant-comentarios{
+    background-color: $colorNav;
+    color:$colorMorado;
+    padding:5px 10px;
+    border-radius:20px;
+    font-weight: bold;
+    align-self: flex-end;
 }
-article{
-    display: grid;
-    grid-template-columns:repeat(2,500px);
-    justify-content: space-between;
-    gap:10px;
+.nav-central{
+    justify-content:space-between;
 }
+
+input[type='search']{
+    border: 0 !important;
+    box-shadow:2px 2px 4px 3px #eaeaea; 
+    border-radius: 20px;
+    max-width: 500px;
+    min-width:auto;
+}
+
